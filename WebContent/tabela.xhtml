@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<meta charset="utf-8"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		
+		<title>Tabelas</title>
+		
+		<link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+	</h:head>
+	
+	<h:body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h:dataTable class="table table-dark table-hover" value="#{produtoController.produtos}" var="prod">
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+				<h:outputText value="#{prod.nome}"/>
+			</h:column>
+			<h:column>
+				<f:facet name="header">Quantidade</f:facet>
+				<h:outputText value="#{prod.qtde}"/>
+			</h:column>			
+		</h:dataTable>
+				</div>
+			</div>
+		</div>
+	
+		
+			
+		<script src="resources/js/jquery-3.2.1.min.js"/>
+		<script src="resources/js/popper.min.js"/>
+    	<script src="resources/js/bootstrap.min.js"/>
+	</h:body>
+</html>

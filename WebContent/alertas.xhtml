@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		
+		<title>Alerta</title>
+		
+		<link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+	</h:head>
+	
+	<h:body>
+		<!-- Verificar cores dos alerts na documentação do bootstrap -->
+		<h:messages id="messages" class="alert-danger" role="alert" style="list-style-type :none;"/>
+		
+		<h:form>
+			<h:outputText value="Nome" for="nome"/>
+			<h:inputText id="nome" value="" required="true" requiredMessage="Campo Obrigatorio!!"/>			
+			<h:commandButton value="Gravar" action="#"/>
+		</h:form>
+		
+		<script src="resources/js/jquery-3.2.1.min.js"/>
+		<script src="resources/js/popper.min.js"/>
+    	<script src="resources/js/bootstrap.min.js"/>
+	</h:body>
+</html>
